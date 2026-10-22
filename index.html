@@ -240,6 +240,7 @@
   .zoom::backdrop { background: rgb(43 41 46 / .62); }
   .zoom img { max-width: min(92vw, 40rem); max-height: 88svh; width: auto; height: auto; border-radius: var(--v-radius); box-shadow: var(--v-e2); background: var(--v-surface); cursor: zoom-out; }
   .zoom__close { position: fixed; top: max(var(--v-4), env(safe-area-inset-top)); right: var(--v-gutter); width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--v-surface); color: var(--v-ink); box-shadow: var(--v-e1); font-size: 1.4rem; line-height: 1; display: grid; place-items: center; }
+  .v-section--snug { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
 </style>
 </head>
 <body>
@@ -375,7 +376,7 @@
     </section>
 
     <!-- 3 · ЧИСТОТА И АТМОСФЕРА: факты из отзывов -->
-    <section class="v-section" data-v-act="flow" data-v-drift="#f7eeec" id="sterilnost" aria-label="Чистота и атмосфера">
+    <section class="v-section v-section--snug" data-v-act="flow" data-v-drift="#f7eeec" id="sterilnost" aria-label="Чистота и атмосфера">
       <div class="v-wrap clean">
         <figure class="clean__fig" data-v-reveal="left" data-v-reveal-at="0.12 0.5">
           <img src="assets/tools.webp" alt="Рабочее место мастера: белый стол, зеркало с лампами, расходники" width="1600" height="1000" loading="lazy">
@@ -398,7 +399,7 @@
     </section>
 
     <!-- 4 · МАСТЕРА: по именам из отзывов, без портретов до согласия -->
-    <section class="v-section" data-v-act="flow" data-v-drift="#f3e7e4" id="master" aria-label="Мастера">
+    <section class="v-section v-section--snug" data-v-act="flow" data-v-drift="#f3e7e4" id="master" aria-label="Мастера">
       <div class="v-wrap master">
         <div class="master__copy" data-v-in data-v-stagger="70">
           <span class="v-label">08 · Мастера</span>
@@ -421,7 +422,7 @@
     </section>
 
     <!-- 5 · ОТЗЫВЫ С ЯНДЕКС.КАРТ -->
-    <section class="v-section" data-v-act="flow" data-v-drift="#f7eeec" id="otzyvy" aria-label="Отзывы с Яндекс.Карт">
+    <section class="v-section v-section--snug" data-v-act="flow" data-v-drift="#f7eeec" id="otzyvy" aria-label="Отзывы с Яндекс.Карт">
       <div class="v-wrap reviews">
         <div class="reviews__head" data-v-in data-v-stagger="60">
           <div>
@@ -452,11 +453,11 @@
     </section>
 
     <!-- 6 · ЗАПИСЬ: финал держит реплику, футер внутри сцены -->
-    <section data-v-act="pin" data-v-span="1.4" id="zapis" aria-label="Записаться">
+    <section data-v-act="pin" data-v-span="1.1" id="zapis" aria-label="Записаться">
       <div data-v-stage>
         <div class="close">
           <div class="close__inner">
-            <div data-v-cue="0.04">
+            <div data-v-cue="0 1 0 0">
               <h2 class="v-display nd nd--xl">Напишите, что хотите сделать</h2>
               <p>Назовём цену и предложим свободное время. Можно и позвонить: мы на связи с 9 до 21 каждый день.</p>
               <div class="close__btns">
@@ -464,7 +465,7 @@
                 <a class="v-btn v-btn--ghost" href="tel:+79005716000">Позвонить</a>
               </div>
             </div>
-            <div class="close__meta" data-v-cue="0.1">
+            <div class="close__meta" data-v-cue="0 1 0 0">
               <a class="close__tel" href="tel:+79005716000">+7 (900) 571-60-00</a>
               <span><b>Улица Труда, 4, корпус 1</b>, Калуга. Вход со двора</span>
               <span>Ежедневно 09:00-21:00</span>
